@@ -8,7 +8,7 @@ export const Table = () => {
     return (
         <>
             <TableHeader scores={scores} />
-            <TableBody currentTurn={currentTurn} />
+            <TableBody currentTurn={currentTurn} cards={cards} chooseCard={chooseCard} />
         </>
     )
 }

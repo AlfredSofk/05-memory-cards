@@ -1,16 +1,18 @@
 import { Card } from "../Card"
+import { ICard } from '../../interfaces/cards';
 
-interface CardsProps {
-    id: number,
-    icon: JSX
-}
 
-interface BasicProps {
+
+
+interface Props {
     currentTurn: string,
-    cards: 
+    cards: Array<ICard>,
+    chooseCard: (id: number) => void
 }
 
-export const TableBody = ({ currentTurn }: Props) => {
+
+
+export const TableBody = ({ currentTurn, cards, chooseCard }: Props) => {
 
     return (
         <>
